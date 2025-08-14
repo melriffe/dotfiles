@@ -13,6 +13,8 @@
   co = checkout
   pf = push --force-with-lease
   st = status
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  authors = shortlog -sn
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
@@ -28,3 +30,10 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+  name = Mel Riffe
+  email = mel@juicyparts.com
+[pull]
+  rebase = true
+[help]
+  autocorrect = 1
